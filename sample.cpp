@@ -1,10 +1,3 @@
-# constexpr_print
-
-constexpr_print は C++20 でコンパイル時に出力するためのライブラリです。
-
-GCC でのみ動作します。
-
-```c++
 #include "constexpr_print.hpp"
 
 #include <iostream>
@@ -61,26 +54,3 @@ int main() {
     std::cout << "It's runtime!\n";
     std::cout << fizzbuzz<100>::value;
 }
-```
-
-```console
-$ g++ -std=c++20 sample.cpp -o sample
-It's compile time!
-1
-2
-Fizz
-4
-Buzz
-︙
-
-$ ./sample
-It's runtime!
-1
-2
-Fizz
-4
-Buzz
-︙
-
-$ 
-```
