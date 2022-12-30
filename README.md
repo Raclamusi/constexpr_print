@@ -3,6 +3,7 @@
 constexpr_print は C++20 でコンパイル時に出力するためのライブラリです。
 
 GCC でのみ動作します。
+また、ANSIエスケープシーケンスに対応したターミナルでコンパイルする必要があります。
 
 ```c++
 #include "constexpr_print.hpp"
